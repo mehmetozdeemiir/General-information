@@ -113,7 +113,7 @@ Stack’te yer alan veriler direk bellek içine yerleştirilir dolayısıyla eri
 Değer tipi (Valu Types) tipinden bir değişken tanımladığımızda, daha derleme aşamasında stack bellekten int tipinin bellekte tuttuğu yer kadar (4 byte) yer tahsis edilir ve değişkene değer atanmışsa ilk atanan değer yerleştirilir. Sonra bu değer değişse bile, bu değişkene 4 byte’lık (2^32 bit)’lik bir sayı yerleştirebileceğimiz için çok büyük sayıları bile atayabileceğimiz bir yer tahsis etmiş oluruz. Aşağıdaki örneğe bakacak olursak int tipinden “a” değişkeni tanımlayıp içine 5 sayısını atarsak, stack’te bu değişken için bir yer tahsisi yaptırmış oluruz ve yine int tipinden başka bir değişken tanımlanıp (b) değerini “a” değerine eşitlersek, stack’te bir 4 byte daha yer tahsis yapacak ve a’nın içeriğini kopyalayıp b’ye yazacaktır. Böylece toplam 8 byte’lık yer ayırmış oluruz. Person tipinde p1 adında bir nesne tanımlarsak bu sefer Heap bellekte yer tahsisi yapılacaktır. P2 adında yeni bir personel tanımlanıp p1’e atanırsa bu sefer heap’te bulunan nesne ortak nesne olacaktır.
 
 **LAZY LOADİNG NEDİR? TERSİ NEDİR? NASIL KAPATABİLİRİZ?**
-Layz Loading; datanın ihtiyaç duyulmadığı sürece çağırılmaması, çalıştırılmaması anlamına gelir. Varsayılan olarak açıktır. Tersi Eager(istekli,hevesli) Loading’tir.  Kapatmak için;
+Lazy Loading; datanın ihtiyaç duyulmadığı sürece çağırılmaması, çalıştırılmaması anlamına gelir. Varsayılan olarak açıktır. Tersi Eager(istekli,hevesli) Loading’tir.  Kapatmak için;
   db.Configuration.LazyLoadingEnabled = false;
 
 
