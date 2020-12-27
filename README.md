@@ -168,3 +168,20 @@ Veri modelinizi sadece bir yere yazarsınız ve kodu güncellemek, korumak ve ye
 Veritabanı işlemeden Lokalizasyona kadar birçok şey otomatik olarak yapılır .
 
 Sonunda, kodunuzu biraz daha temiz hale getiren MVC kodunu yazmaya zorlar.
+
+**Framework Nedir?** 
+
+Framework bir uygulama çatısıdır biz uygulamamızı o çatıya göre geliştiririz.
+
+Framework, yazılım geliştiricilerin kullandığı önceden hazırlanmış kütüphanelerin bunluduğu ve bunlara yenilerini ekleyebileceği yapıların adıdır. Gelişmiş frameworklerde form kontrolü, veri tabanı bağlantısı, kullanıcı giriş çıkış, mail atma, tema motoru gibi kütüphaneler mevcuttur.
+
+Frameworkler ayrıca MVC (Model, View, Controller) gibi bölümlerden oluşarak projenizin daha okunabilir düzenlenebilir olmasını sağlamaktadır.
+
+Yapılan projelerin çoğunda aradan belirli bir zaman geçtikten sonra düzenlemek zorlaşır. Hem kodların artması hem de yazılan kodun unutulması revize sürecini uzatmakta. Bu yapılar Modelde veritabanı işlemlerini, Controllerda genel mekaniği, Viewda ise görünüm kodu içerdiği için müdahale edilmesi gereken yer tam olarak bulanabilmektedir.
+
+**Framework kullanmak ne gibi kazançlar sağlar?**
+Frameworkler temel yapıları en çok kullanılan kütüphaneleri ve modülleri barındırır. Hiç bir framework ana yapısında gelişmiş yapıları içermez. Bunun yerine genişletmek yoluyla projenize uydurulur. Örneğin giriş yaparken genel olarak eposta değişkeni ile giriş yapılır. Siz eğer kullanıcı adı ile giriş yapmak istiyorsanız sadece o fonksiyonu değiştirerek projenizi yazmaya devam edebilirsiniz. Framework kullanmak size bu bağlamda hız katar. Veri tabanı bağlantıları, güvenlik sorunları veya yetkilendirme gibi en temel bölümleri yazmanıza gerek yoktur. Frameworkün ya içinde vardır yada çok kolay bir şekilde dahil edilebilir. Bu sayede tam olarak bitirilmesi 2 ayı bulacak projeler bazen 2-3 hafta da bitebilmektedir. Diğer bir kazancı ise belli standartları olduğu için bu standartlarda geliştirilen projeye yeni takım arkadaşları kolaylıkla entegre olabilir. Bu gibi faydalara rağmen kısıtlanmış ve bazı kriterlerinizde sorun yaşıyorsanız framework kullanmayabilirsiniz.
+
+**Framework ve Library Arasındaki Fark Nedir?**
+
+Library ile Framework ‘ün ayrıştığı nokta teknik kısımdır. İki arasındaki temel teknik fark,  kodun nasıl çağrıldığıdır. Library kullanırken, library size bazı özellikler vererek kullanmanızı sağlar, bu şekilde almış olduğunuzu kodu kendi sisteminize uygularken size kodu nerede ve ne zaman kullanacağınıza karışmaz veya bir diğer deyişle dikte etmez.  Framework ise Library'in tersine  kullanacağız özelliğe göre kodu nerede ve ne zaman kullanacağınız söyler, kullanacağız bu işlev, eğer Framework dokümanın belirtildiği gibi kullanılmaz ise kullanım dışı kalır.
